@@ -34,6 +34,7 @@ public class BungeeTabPlayer extends ProxyTabPlayer {
     private static Method getId;
 
     static {
+
         try {
             Class<?> initialHandler = Class.forName("net.md_5.bungee.connection.InitialHandler");
             InitialHandler_getLoginProfile = initialHandler.getMethod("getLoginProfile");
